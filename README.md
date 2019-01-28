@@ -3,15 +3,11 @@ This repo provides guidelines on how to acquire, process, visualize and analyze 
 
 The first step is to clone this directory. 
 
-Move to a suitable directory (using `~/Desktop/` for example purposes):
+Move to a suitable directory (using `~/Desktop/` for example purposes), clone the repo and enter the repo:
 
 `cd ~/Desktop`
 
-Then clone the repo:
-
 `git clone https://github.com/mmingay2/methylMorpheus.git`
-
-Then enter the repo:
 
 `cd methylMorpheus`
 
@@ -25,11 +21,12 @@ If you would just like to test this out download the first 5 datasets (about 600
 
 `sh scripts/download_data.sh other/tcga-coad-450probe_manifest_first5.txt`
 
-If you have alot of hard drive space and would like to download the entire dataset (about 50gb) run:
+If you have alot of hard drive space and would like to download the entire dataset (about 50GB) run:
 
 `sh scripts/download_data.sh other/tcga-coad-450probe_manifest.txt`
 
 If you would like to download a custom dataset just point the download_data.sh script to the relative path of a suitable [manifest file](https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Preparing_for_Data_Download_and_Upload/#obtaining-a-manifest-file-for-data-download).
+
 
 
 
