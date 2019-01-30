@@ -50,7 +50,7 @@ Now we have clean files containing:
 
 It looks like there are some lines with missing information...keep this in mind for later....
 
-**notice that this data is all associated with hg38 not hg19**
+\***notice that this data is all associated with hg38 not hg19**\*
 
 If you need hg19 coordinates you will need to process the data a bit. 
 
