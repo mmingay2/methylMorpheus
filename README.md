@@ -1,7 +1,7 @@
 # methylMorpheus
 This repo provides guidelines on how to acquire, process, visualize and analyze massive [TCGA](https://portal.gdc.cancer.gov/) datasets and associated clinical metadata using heatmaps ([Morpheus.js](https://github.com/cmap/morpheus.js)) in the browser.
 
-The first step is to clone this directory. 
+### Clone this directory
 
 Move to a suitable directory (using `~/Desktop/` for example purposes), clone the repo and enter the repo:
 
@@ -10,6 +10,8 @@ Move to a suitable directory (using `~/Desktop/` for example purposes), clone th
 `git clone https://github.com/mmingay2/methylMorpheus.git`
 
 `cd methylMorpheus`
+
+### Download TCGA Data
 
 To install gdc-client for downloading datasets from the gdc portal run the following script:
 
@@ -28,6 +30,8 @@ If you have alot of hard drive space and would like to download the entire datas
 If you would like to download a custom dataset just point the download_data.sh script to the relative path of a suitable [manifest file](https://docs.gdc.cancer.gov/Data_Transfer_Tool/Users_Guide/Preparing_for_Data_Download_and_Upload/#obtaining-a-manifest-file-for-data-download).
 
 The download_data.sh script is pre-configured to make a new directory `./data/tcga_coad_450probes/` and download the data into it.
+
+### Clean the data
 
 Next it is a good idea to process the raw data a bit to extract and organize the useful information. To do this run `process_probedata.sh -i $in_directory -o $out_directory`
 
@@ -56,12 +60,9 @@ If you need hg19 coordinates you will need to process the data a bit.
 
 You can download the [HumanMethylation450 v1.2 Manifest File](ftp://ussd-ftp.illumina.com/downloads/ProductFiles/HumanMethylation450/HumanMethylation450_15017482_v1-2.csv) which contains genomic locations for multiple assemblies and other metadata associated with [Illumina's Infinium HumanMethylation450K probes](https://support.illumina.com/downloads/infinium_humanmethylation450_product_files.html)
 
+### Transform the data
+
 Since we want to visualize this dataset (ideally for every patient) it would be good to reduce the dimensions a bit. For DNA methylation a reasonable way to do this would be to group by CpG island and take the average of the methylation values.
-
-
-
-FYI. You can download the [HumanMethylation450 v1.2 Manifest File](ftp://ussd-ftp.illumina.com/downloads/ProductFiles/HumanMethylation450/HumanMethylation450_15017482_v1-2.csv) which contains genomic locations and other metadata associated with [Illumina's Infinium HumanMethylation450K probes](https://support.illumina.com/downloads/infinium_humanmethylation450_product_files.html)
-
 
 
 
