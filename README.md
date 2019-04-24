@@ -66,6 +66,22 @@ Since we want to visualize this dataset (ideally for every patient) it would be 
 
 
 
+## Get the Clinical Data
+
+A [recent publication](https://www.cell.com/cell/fulltext/S0092-8674(18)30229-0) organized and cleaned some of the key clinical data points for the TCGA participants. 
+
+You can find it in the first tab of Table S1 in the supplementary information or in this repo.
+
+`data/tcga_clinical_data_PMC6066282.csv`
+
+A pre-processed file from which the COAD cohort has been extracted from the above dataset and the patient identifiers parsed/harmonized with the methylation data is also in the repo.
+
+`data/harmonized_coad_clinical.txt` 
+
+We will be using the latter for subsequent analysis.
 
 
 
+
+
+*
